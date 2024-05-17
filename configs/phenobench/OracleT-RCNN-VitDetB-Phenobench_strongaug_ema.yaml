@@ -1,0 +1,11 @@
+_BASE_: "../Base-RCNN-VitDetB.yaml"
+DATASETS:
+  TRAIN: ("syn_pheno_train",)
+  TEST: ("pheno_val","syn_pheno_val",)
+  BATCH_CONTENTS: ("labeled_strong", )
+EMA:
+  ENABLED: True
+SOLVER:
+  STEPS: (6400,)
+  MAX_ITER: 8000
+OUTPUT_DIR: "/netscratch/naeem/aldi_uda_phenobench_Syn2Real_UDA/"

@@ -1,0 +1,14 @@
+_BASE_: "../Base-RCNN-VitDetB.yaml"
+MODEL:
+  ROI_HEADS:
+    NUM_CLASSES: 2
+DATASETS:
+  TRAIN: ("syn_pheno_train",)
+  TEST: ("pheno_val",)
+  BATCH_CONTENTS: ("labeled_strong", )
+EMA:
+  ENABLED: True
+SOLVER:
+  STEPS: (6400,)
+  MAX_ITER: 8000
+OUTPUT_DIR: "/netscratch/naeem/aldi_uda_phenobench_baseline_source_domain_only_synthetic/"

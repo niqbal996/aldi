@@ -20,3 +20,10 @@ register_coco_instances("cfc_train", {},         "datasets/cfc/coco_labels/cfc_t
 register_coco_instances("cfc_val",   {},         "datasets/cfc/coco_labels/cfc_val.json",                    "datasets/cfc/images/cfc_val/")
 register_coco_instances("cfc_channel_train", {},         "datasets/cfc/coco_labels/cfc_channel_train.json",                  "datasets/cfc/images/cfc_channel_train/")
 register_coco_instances("cfc_channel_test",   {},         "datasets/cfc/coco_labels/cfc_channel_test.json",                    "datasets/cfc/images/cfc_channel_test/")
+
+
+# Phenobench
+register_coco_instances("pheno_train", {},         "/netscratch/naeem/phenobench/coco_annotations/coco_plants_panoptic_train.json", "/netscratch/naeem/phenobench/train/")
+register_coco_instances("pheno_val", {},         "/netscratch/naeem/phenobench/coco_annotations/coco_plants_panoptic_val.json", "/netscratch/naeem/phenobench/val/")
+register_coco_instances("syn_pheno_train", {},         "/netscratch/naeem/sugarbeet_syn_v2/coco_annotations/instances_train.json", "/netscratch/naeem/sugarbeet_syn_v2/images")
+register_coco_instances("syn_pheno_val", {},         "/netscratch/naeem/sugarbeet_syn_v2/coco_annotations/instances_val.json", "/netscratch/naeem/sugarbeet_syn_v2/images")
